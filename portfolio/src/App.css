@@ -1,0 +1,9 @@
+body{
+  user-select: none;
+  font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #444;
+  background: #1d1d1d;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}

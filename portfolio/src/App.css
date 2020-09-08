@@ -1,9 +1,32 @@
+:root {
+  --accent01: #00ffff;
+  --accent02: #ff00ff;
+  --neutral-text: #909096;
+  --dark-black: #181818;
+  --medium-black: #1d1d1d;
+}
+
+*,*:after, *:before {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
 body{
   user-select: none;
   font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #444;
-  background: #1d1d1d;
+  background: var(--medium-black);
   overflow: hidden;
   display: block;
   margin: 0;
+}
+
+/* utility classes */
+
+.hidden{
+  visibility: hidden;
+}
+
+.up{
+  z-index: 10;
 }

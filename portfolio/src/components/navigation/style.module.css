@@ -1,36 +1,112 @@
 Header{
-  background: #181818;
-  width: 60px;
+  background: var(--dark-black);
+  color: var(--neutral-tex);
   height: 100%;
   position: fixed;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 3;
   min-height: 500px;
+  top: 0;
+  width: 60px;
+  z-index: 3;
 }
-a{
-  padding: 7px 0;
+
+nav{
   display: block;
-  font-size: 15px;
-  line-height: 16px;
-  color: #909096;
-  background-color: transparent;
+  text-align: center;
+}
+
+nav a{
+  color: var(--neutral-tex);
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  height: 51px;
+  line-height: 51px;
+  margin-bottom: 15px;
+  position: relative;
   text-decoration: none;
+  transition: all .1s ease-out;
+}
+
+nav a.active{
+  color: var(--accent01);
+}
+
+nav a:after{
+  bottom: 0;
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: all .3s ease-out;
+  width: 100%;
+}
+
+nav a:hover{
+  background-color: transparent;
+  color: var(--accent01);
+  outline: 0;
+}
+
+nav a:hover svg {
+  opacity: 0;
+}
+
+nav a:hover:after {
+  opacity: 1;
+}
+
+nav a:first-child:after{
+  content: 'HOME'
+}
+nav a:first-child+a:after{
+  content: 'ABOUT'
+}
+
+nav a:first-child+a+a:after{
+  content: 'SKILLS'
+}
+
+nav a:first-child+a+a+a:after{
+  content: 'MY WORK'
+}
+
+nav a:last-child:after{
+  content: 'CONTACT'
+}
+
+nav a svg{
+  transition: all .3s ease-out;
 }
 
 ul{
-  list-style-type: none;
   display: block;
-  padding: 0;
+  list-style-type: none;
   list-style: none;
-  text-align: center;
   margin: 0;
+  padding: 0;
   padding-bottom: 20px;
+  text-align: center;
 }
 
-li {
+ul li a{
+  background-color: transparent;
+  color: var(--neutral-tex);
+  display: block;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 7px 0;
+  text-decoration: none;
+}
+
+ul li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
+
+

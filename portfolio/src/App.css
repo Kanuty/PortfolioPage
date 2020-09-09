@@ -21,6 +21,13 @@ body{
   margin: 0;
 }
 
+.appContainer{
+  position: absolute;
+  left: 5%;
+  max-height: 90%;
+}
+
+/*to do - media qyerry*/
 /* utility classes */
 
 .hidden{

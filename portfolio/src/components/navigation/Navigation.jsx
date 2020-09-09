@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,40 +9,41 @@ import "./style.module.css"
 
 const Navigation = (props) => {
   const {
-
     linkedinLink,
     facebookLink
   } = props;
 
   return (
   <header>
-    <img src={require("./img/logo004.svg")} alt='logo'/>
+    <img src={require("./img/logo008.svg")} alt='logo'/>
     <nav>
-      <a rel="index" target="_blank">
-        <FontAwesomeIcon icon={faHome} />
-      </a>
-      <a rel="about" target="_blank">
-        <FontAwesomeIcon icon={faUserSecret} />
-      </a>
-      <a rel="skills" target="_blank">
-        <FontAwesomeIcon icon={faDiceD20} />
-      </a>
-      <a rel="gallery" target="_blank">
-        <FontAwesomeIcon icon={faGem} />
-      </a>
-      <a rel="contact" target="_blank">
-        <FontAwesomeIcon icon={faAddressCard} />
-      </a>
+      <Link to='/'
+       className='active'
+      >
+          <FontAwesomeIcon icon={faHome} />
+      </Link>
+      <Link to='/about'>
+          <FontAwesomeIcon icon={faUserSecret} />
+      </Link>
+      <Link to='/skills'>
+          <FontAwesomeIcon icon={faDiceD20} />
+      </Link>
+      <Link to='/gallery'>
+          <FontAwesomeIcon icon={faGem} />
+      </Link>
+      <Link to='/contact'>
+          <FontAwesomeIcon icon={faAddressCard} />
+      </Link>
     </nav>
     <ul>
       <li>
         <a href={linkedinLink} target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} />
+        <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
         </a>
       </li>
       <li>
         <a href={facebookLink} target="_blank">
-          <FontAwesomeIcon icon={faFacebook} />
+          <img src={require("./img/fb001.svg")} alt='facebook'/>
         </a>
       </li>
     </ul>

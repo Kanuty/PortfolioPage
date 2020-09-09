@@ -17,6 +17,8 @@ nav{
   text-align: center;
 }
 
+/* Link is treated as an "a" tag */
+
 nav a{
   color: var(--neutral-tex);
   cursor: pointer;
@@ -28,10 +30,6 @@ nav a{
   position: relative;
   text-decoration: none;
   transition: all .1s ease-out;
-}
-
-nav a.active{
-  color: var(--accent01);
 }
 
 nav a:after{
@@ -59,24 +57,28 @@ nav a:hover svg {
 nav a:hover:after {
   opacity: 1;
 }
+/* active must be called after hover! */
+nav a:active{
+  color: var(--accent02);
+}
 
 nav a:first-child:after{
-  content: 'HOME'
+  content: 'HOME';
 }
 nav a:first-child+a:after{
-  content: 'ABOUT'
+  content: 'ABOUT';
 }
 
 nav a:first-child+a+a:after{
-  content: 'SKILLS'
+  content: 'SKILLS';
 }
 
 nav a:first-child+a+a+a:after{
-  content: 'MY WORK'
+  content: 'MY WORK';
 }
 
 nav a:last-child:after{
-  content: 'CONTACT'
+  content: 'CONTACT';
 }
 
 nav a svg{
@@ -106,6 +108,11 @@ ul li a{
 ul li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+ul li a img{
+  max-height: 30px;
+  max-width: 30px;
 }
 
 

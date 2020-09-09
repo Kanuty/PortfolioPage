@@ -8,14 +8,14 @@ import "./style.module.css"
 
 const Navigation = (props) => {
   const {
-    logo,
+
     linkedinLink,
     facebookLink
   } = props;
 
   return (
   <header>
-    <img src={logo} alt='logo'></img>
+    <img src={require("./img/logo004.svg")} alt='logo'/>
     <nav>
       <a rel="index" target="_blank">
         <FontAwesomeIcon icon={faHome} />
@@ -50,7 +50,6 @@ const Navigation = (props) => {
 };
 
 Navigation.propTypes = {
-  logo: PropTypes.string,
   linkedinLink: PropTypes.string,
   facebookLink: PropTypes.string,
 };

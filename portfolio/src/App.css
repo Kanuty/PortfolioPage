@@ -13,7 +13,7 @@
 
 body{
   user-select: none;
-  font: 300 11px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font: 20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #444;
   background: var(--medium-black);
   overflow: hidden;

@@ -1,10 +1,12 @@
 import React from 'react';
+
+import GlitchedText from '../../components/glitchedText';
 import './Home.css';
 
 function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div className="globalContainer">
+      <GlitchedText text="Home Page"></GlitchedText>
     </div>
   );
 }

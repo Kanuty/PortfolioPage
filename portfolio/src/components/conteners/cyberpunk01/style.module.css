@@ -1,0 +1,19 @@
+
+.cyberSquere {
+  display: flex;
+  background: url('./img/cyber_squere02.svg') no-repeat;
+  background-size: 100%;
+  margin: 5px;
+  height: 500px;
+  width: 500px;
+}
+
+.cyberSquere p {
+  text-align: justify;
+  display: flex;
+  font-family: monospace;
+  margin: 60px 35px 50px 35px;
+  color: var(--accent01);
+  text-shadow: 1px 1px 10px var(--accent02);
+  overflow: hidden;
+}

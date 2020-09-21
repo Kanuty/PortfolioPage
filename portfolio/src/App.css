@@ -13,7 +13,7 @@
 
 body{
   user-select: none;
-  font: 20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font: 18px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #444;
   background: var(--medium-black);
   overflow: hidden;
@@ -21,16 +21,20 @@ body{
   margin: 0;
 }
 
-.appContainer{
+.appContainer {
   position: absolute;
   left: 5%;
   max-height: 90%;
 }
 
+.globalContainer {
+  margin-left: 50px;
+}
+
 /*to do - media qyerry*/
 /* utility classes */
 
-.hidden{
+.hidden {
   visibility: hidden;
 }
 

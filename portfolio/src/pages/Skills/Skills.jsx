@@ -1,10 +1,12 @@
 import React from 'react';
+
+import GlitchedText from '../../components/glitchedText';
 import './Skills.css';
 
 function Skills() {
   return (
-    <div>
-      <h1>Skills Page</h1>
+    <div className="globalContainer">
+      <GlitchedText text="Skills Page"></GlitchedText>
     </div>
   );
 }

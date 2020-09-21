@@ -1,10 +1,13 @@
 import React from 'react';
-import './Contact.css';
+
+import GlitchedText from '../../components/glitchedText';
+
+import './style.module.css';
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="globalContainer">
+      <GlitchedText text="Contact"></GlitchedText>
     </div>
   );
 }

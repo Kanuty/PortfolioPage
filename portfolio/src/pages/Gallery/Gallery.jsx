@@ -1,10 +1,12 @@
 import React from 'react';
+
+import GlitchedText from '../../components/glitchedText';
 import './Gallery.css';
 
 function Gallery() {
   return (
-    <div>
-      <h1>Gallery Page</h1>
+    <div className="globalContainer">
+      <GlitchedText text="Gallery Page"></GlitchedText>
     </div>
   );
 }

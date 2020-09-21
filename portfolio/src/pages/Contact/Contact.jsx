@@ -1,7 +1,6 @@
 import React from 'react';
 
 import GlitchedText from '../../components/glitchedText';
-
 import './style.module.css';
 
 function Contact() {

@@ -1,10 +1,17 @@
+.heroHeading {width: 300px;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin-top: 20px;
+}
 .glitch-wrapper {
   height: 100%;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
+  /* -webkit-box-pack: center; */
           justify-content: center;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center; */
           align-items: center;
 }
 .glitch {
@@ -14,6 +21,7 @@
   font-family: monospace;
   position: relative;
   display: inline-block;
+  justify-content: center;
 }
 .glitch::before,
 .glitch::after {

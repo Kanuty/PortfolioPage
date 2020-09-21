@@ -8,7 +8,18 @@
   width: 500px;
 }
 
-.cyberSquere p {
+.background {
+  display: flex;
+  background: url('./img/cyberBackground02.svg') no-repeat;
+  background-size: 100%;
+  margin: 5px;
+  height: 99%;
+  width: 99%;
+  z-index: -1;
+}
+
+.background p {
+  opacity: 1;
   text-align: justify;
   display: flex;
   font-family: monospace;
@@ -17,3 +28,4 @@
   text-shadow: 1px 1px 10px var(--accent02);
   overflow: hidden;
 }
+

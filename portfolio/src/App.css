@@ -25,10 +25,11 @@ body{
   position: absolute;
   left: 5%;
   max-height: 90%;
+  
 }
 
 .globalContainer {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 /*to do - media qyerry*/
@@ -40,4 +41,15 @@ body{
 
 .up{
   z-index: 10;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow: visible;
+  }
+
+  .appContainer {
+    left: 12%;
+    max-height: 90%;
+  }
 }

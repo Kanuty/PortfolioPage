@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {cyberSquere} from'./style.module.css';
+import { cyberSquere, background} from'./style.module.css';
 
 function Cyberpunk01(props) {
   const {
     text,
-    container
+    container,
   } = props;
   
   return (
     <div className={container}>
+      <div className={background}>
       <p>{text}</p>
+      </div>
     </div>
   );
 }

@@ -9,11 +9,11 @@ const GlitchedText = (props) => {
   } = props;
 
   return (
-      <h1 className={heroHeading}>
+      <div className={heroHeading}>
         <div className={glitchWrapper}>
           <div className={glitch} data-text={text}>{text}</div>
         </div>
-      </h1>
+      </div>
   )
 };
 

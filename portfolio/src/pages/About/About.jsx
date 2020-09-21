@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="globalContainer">
       <GlitchedText text="About Page"></GlitchedText>
-      <Cyberpunk01></Cyberpunk01>
+      <Cyberpunk01 ></Cyberpunk01>
     </div>
   );
 }

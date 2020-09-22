@@ -13,8 +13,8 @@ function Cyberpunk00(props) {
   
   return (
     <div className={container}>
-      {skills.map(element => 
-        <Cyberpunk02 text={element}></Cyberpunk02>
+      {skills.map((element, index) => 
+        <Cyberpunk02 key={index} text={element}></Cyberpunk02>
       )}
     </div>
   );

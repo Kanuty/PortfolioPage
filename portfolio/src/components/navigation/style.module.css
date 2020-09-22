@@ -56,10 +56,12 @@ nav a:hover svg {
 
 nav a:hover:after {
   opacity: 1;
+  text-shadow: 1px 1px 5px var(--accent02);
 }
 /* active must be called after hover! */
 nav a:active{
   color: var(--accent02);
+  text-shadow: 1px 1px 5px var(--accent02);
 }
 
 nav a:first-child:after{

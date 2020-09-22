@@ -1,0 +1,58 @@
+.container{
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  min-width: 150px;
+  height: 250px;
+  flex-wrap: wrap;
+}
+
+.container ul{
+  width: 99%;
+  margin: 1px;
+  border: 1px solid var(--accent02);
+  box-shadow: 1px 1px 5px var(--accent02);
+  z-index: 10;
+
+}
+.container ul>li{
+  margin-bottom: 7px;
+  
+}
+
+.upperTrivia{
+  min-height: 25px;
+  background: url('./img/upperTrivia.svg') no-repeat;
+  background-size: 100%;
+}
+
+
+.mainContent{
+  min-height: 90%;
+  border: 1px solid var(--accent01);
+  box-shadow: 1px 1px 5px var(--accent01);
+  margin: 1px 3px 1px 3px;
+
+  
+}
+.skillEmblem{
+  min-height: 110px;
+  background: url('./img/text.png') no-repeat;
+  background-size: 100%;
+
+  /* border: 1px solid var(--accent02);
+  box-shadow: 1px 1px 10px var(--accent02); */
+}
+
+.skillText{
+  font-size: 30px;
+  text-shadow:1px 1px 4px var(--accent02);
+  color: var(--accent01);
+
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+
+
+}

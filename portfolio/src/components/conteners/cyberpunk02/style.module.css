@@ -5,6 +5,7 @@
   min-width: 150px;
   height: 250px;
   flex-wrap: wrap;
+  font-family: monospace;
 }
 
 .container ul{
@@ -16,8 +17,8 @@
 
 }
 .container ul>li{
-  margin-bottom: 7px;
-  
+  margin-bottom: 8px;
+  margin-top: -4px;
 }
 
 .upperTrivia{
@@ -32,25 +33,45 @@
   border: 1px solid var(--accent01);
   box-shadow: 1px 1px 5px var(--accent01);
   margin: 1px 3px 1px 3px;
-
-  
-}
-.skillEmblem{
-  min-height: 110px;
-  background: url('./img/text.png') no-repeat;
+  background: url('./img/backgroundWaves.svg');
   background-size: 100%;
+  animation: animation 400s linear infinite;
+  padding: 5px
+}
 
-  /* border: 1px solid var(--accent02);
-  box-shadow: 1px 1px 10px var(--accent02); */
+
+@keyframes animation {
+  100%{
+   background-position:0px -3000px;
+ }
+}
+
+.skillEmblem{
+  min-height: 100px;
+  margin: 10px;
+}
+
+.skillEmblem img{
+  max-height: 95px;
+}
+
+.skillEmblem img:hover {
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: 1s;
+}
+
+
+@media (max-width: 1000px) {
+  .skillEmblem {
+    margin: auto;
+    width: 50%;
+  }
 }
 
 .skillText{
   font-size: 30px;
   text-shadow:1px 1px 4px var(--accent02);
   color: var(--accent01);
-
-  display: flex;
-  justify-content: center;
   padding: 10px;
   width: 100%;
 

@@ -2,7 +2,7 @@
   margin: 10px;
   padding: 5px;
   display: flex;
-  min-width: 150px;
+  max-width: 200px;
   height: 250px;
   flex-wrap: wrap;
   font-family: monospace;
@@ -14,6 +14,7 @@
   border: 1px solid var(--accent02);
   box-shadow: 1px 1px 5px var(--accent02);
   z-index: 10;
+  max-width: 170px;
 
 }
 .container ul>li{
@@ -25,6 +26,7 @@
   min-height: 25px;
   background: url('./img/upperTrivia.svg') no-repeat;
   background-size: 100%;
+  
 }
 
 
@@ -36,7 +38,8 @@
   background: url('./img/backgroundWaves.svg');
   background-size: 100%;
   animation: animation 400s linear infinite;
-  padding: 5px
+  padding: 5px;
+
 }
 
 
@@ -66,14 +69,37 @@
     margin: auto;
     width: 50%;
   }
+  .container{
+    max-width: 98%;
+  }
+  .container ul{
+    width: 99%;
+    margin: 1px;
+    border: 1px solid var(--accent02);
+    box-shadow: 1px 1px 5px var(--accent02);
+    z-index: 10;
+    max-width: 98%;
+  
+  }
+
 }
 
 .skillText{
-  font-size: 30px;
+  font-size: 25px;
   text-shadow:1px 1px 4px var(--accent02);
   color: var(--accent01);
   padding: 10px;
   width: 100%;
 
-
 }
+
+.checked {
+  color: var(--accent01);
+}
+
+li:hover>.checked{
+  color: var(--accent02);
+  transition: 0.2s;
+}
+
+

@@ -22,10 +22,12 @@ body{
 }
 
 .appContainer {
+  display:flex;
+  justify-content: center;
   position: absolute;
   left: 5%;
-margin: auto;
-  
+  margin: auto;
+  width: 90%;
 }
 
 .globalContainer {

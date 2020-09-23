@@ -14,7 +14,7 @@ function Cyberpunk00(props) {
   return (
     <div className={container}>
       {skills.map((element, index) => 
-        <Cyberpunk02 key={index} text={element}></Cyberpunk02>
+        <Cyberpunk02 key={index} text={element[0]} raiting={element[1]}></Cyberpunk02>
       )}
     </div>
   );
@@ -27,7 +27,7 @@ Cyberpunk00.propTypes = {
 
 Cyberpunk00.defaultProps = {
   container: cyberLongSquere,
-  skills: ["1","2","3","4","5"],
+  skills: [["Aaa",1],["Bbb",2],["Ccc",3],["Ddd",4],["Eee",5]],
 };
 
 export default (Cyberpunk00);

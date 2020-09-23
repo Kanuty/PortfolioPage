@@ -3,14 +3,20 @@ import PropTypes from 'prop-types';
 import html from './img/html002.svg';
 import css from './img/css002.svg';
 import js from './img/js002.svg';
-import react from './img/html001.svg';
-import redux from './img/html001.svg';
+import react from './img/react002.svg';
+import redux from './img/redux002.svg';
+import inkscape from './img/inkscape002.svg';
+import blender from './img/blender002.svg';
+import sp from './img/sp002.svg';
+import sd from './img/sd002.svg';
+import krita from './img/krita002.svg';
 
-import { container, upperTrivia, mainContent, skillEmblem, skillText} from'./style.module.css';
+import { container, upperTrivia, mainContent, skillEmblem, skillText, checked} from'./style.module.css';
 
 function Cyberpunk02(props) {
   const {
     text,
+    raiting,
   } = props;
 
 
@@ -19,6 +25,11 @@ function Cyberpunk02(props) {
     text ==="JS" ? js :
     text ==="REACT" ? react :
     text ==="REDUX" ? redux :
+    text ==="INKSCAPE" ? inkscape :
+    text ==="BLENDER" ? blender :
+    text ==="SP" ? sp :
+    text ==="SD" ? sd :
+    text ==="KRITA" ? krita :
     html;
   
   return (
@@ -33,6 +44,11 @@ function Cyberpunk02(props) {
           <div className={skillText}>
             <span>{text}</span>
           </div>
+          <span className= {raiting < 1 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 2 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 3 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 4 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 5 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
         </li>
       </ul>
     </div>
@@ -41,11 +57,12 @@ function Cyberpunk02(props) {
 
 Cyberpunk02.propTypes = {
   text: PropTypes.string,
-
+  raiting: PropTypes.number,
 };
 
 Cyberpunk02.defaultProps = {
   text: `Lorem ipsum`,
+  raiting: 1,
 };
 
 export default (Cyberpunk02);

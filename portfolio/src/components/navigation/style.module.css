@@ -9,7 +9,7 @@ Header{
   min-height: 500px;
   top: 0;
   width: 60px;
-  z-index: 3;
+  z-index: 100;
 }
 
 nav{

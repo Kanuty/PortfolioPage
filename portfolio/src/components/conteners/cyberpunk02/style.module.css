@@ -10,7 +10,7 @@
 
 .container ul{
   width: 99%;
-  margin: 1px;
+  margin: 4px;
   border: 1px solid var(--accent02);
   box-shadow: 1px 1px 5px var(--accent02);
   z-index: 10;

@@ -10,7 +10,11 @@ import blender from './img/blender002.svg';
 import sp from './img/sp002.svg';
 import sd from './img/sd002.svg';
 import krita from './img/krita002.svg';
-
+import graphql from './img/graphql002.svg';
+import node from './img/node002.svg';
+import php from './img/php002.svg';
+import python from './img/python002.svg';
+import sass from './img/sass002.svg';
 import { container, upperTrivia, mainContent, skillEmblem, skillText, checked} from'./style.module.css';
 
 function Cyberpunk02(props) {
@@ -30,6 +34,11 @@ function Cyberpunk02(props) {
     text ==="SP" ? sp :
     text ==="SD" ? sd :
     text ==="KRITA" ? krita :
+    text ==="GRAPHQL" ? graphql :
+    text ==="NODE.JS" ? node :
+    text ==="PHP" ? php :
+    text ==="PYTHON" ? python :
+    text ==="SASS" ? sass :
     html;
   
   return (

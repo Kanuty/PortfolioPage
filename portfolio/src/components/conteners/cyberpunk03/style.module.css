@@ -16,6 +16,24 @@
   z-index: -1;
 }
 
+.waves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('./img/backgroundWaves.svg') no-repeat;
+  background-size: 100%;
+  margin: 5px;
+  height: 99%;
+  width: 99%;
+  z-index: -2;
+  animation: animation 400s linear infinite;
+}
+
+@keyframes animation {
+  100%{
+   background-position:0px -3000px;
+ }
+}
 .pictureSection{
   display: flex;
   flex-direction: column;

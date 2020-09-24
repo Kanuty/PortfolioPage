@@ -44,8 +44,6 @@ function Cyberpunk02(props) {
   return (
     <div className={container}>
       <ul>
-        <li className={upperTrivia}>
-        </li>
         <li className={mainContent}>
           <div className={skillEmblem}>
             <img src={image} alt={text}></img>

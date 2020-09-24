@@ -1,0 +1,112 @@
+
+.cartContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: 2px solid var(--accent01);
+  box-shadow: 1px 1px 5px var(--accent01);
+  margin: 15px;
+  padding: 15px;
+  background: url('./img/cyber_squere02.svg') no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.pictureSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  width: 98%;
+  /* animation: spin 15s linear infinite; */
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+  }
+
+}
+
+.pictureSection img{
+  display: inline-block;
+  max-height: 200px;
+  max-width: 300px;
+  padding: 10px;
+  /* animation:  spin reverse 15s linear infinite; */
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+
+  width: 98%;
+  
+}
+
+.textSection p, h1 {
+  text-align: center;
+  display: flex;
+  color: var(--accent01);
+  text-shadow: 1px 1px 10px var(--accent02);
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+}
+
+.textSection a{
+  text-align: justify;
+  display: flex;
+  color: var(--accent02);
+  text-shadow: 1px 1px 10px var(--accent02);
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 100px;
+  border-left: double 5px var(--accent02);
+  border-right: double 5px var(--accent02);
+  
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 38.9340px;
+  
+}
+
+.hexagon:before {
+  top: -106.0660px;
+  border-top: double 7px var(--accent02);
+  border-right: double 7px var(--accent02);
+}
+
+.hexagon:after {
+  bottom: -106.0660px;
+  border-bottom: double 7px var(--accent02);
+  border-left: double 7px var(--accent02);
+}

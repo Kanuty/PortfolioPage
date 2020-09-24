@@ -22,7 +22,14 @@ function Cyberpunk00(props) {
 
 Cyberpunk00.propTypes = {
   container: PropTypes.string,
-  skills: PropTypes.arrayOf(PropTypes.string),
+  skills: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ])
+    )
+  ),
 };
 
 Cyberpunk00.defaultProps = {

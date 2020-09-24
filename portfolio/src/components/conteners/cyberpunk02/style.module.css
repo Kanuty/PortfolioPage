@@ -1,32 +1,19 @@
 .container{
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
   display: flex;
   max-width: 200px;
   height: 250px;
   flex-wrap: wrap;
   font-family: monospace;
+  align-items: center;
 }
 
 .container ul{
   width: 99%;
   margin: 4px;
-  border: 1px solid var(--accent02);
-  box-shadow: 1px 1px 5px var(--accent02);
-  z-index: 10;
   max-width: 170px;
-
-}
-.container ul>li{
-  margin-bottom: 8px;
-  margin-top: -4px;
-}
-
-.upperTrivia{
-  min-height: 25px;
-  background: url('./img/upperTrivia.svg') no-repeat;
-  background-size: 100%;
-  
+  padding-bottom: 0px;
 }
 
 
@@ -34,12 +21,10 @@
   min-height: 90%;
   border: 1px solid var(--accent01);
   box-shadow: 1px 1px 5px var(--accent01);
-  margin: 1px 3px 1px 3px;
   background: url('./img/backgroundWaves.svg');
   background-size: 100%;
   animation: animation 400s linear infinite;
   padding: 5px;
-
 }
 
 
@@ -94,11 +79,11 @@
 }
 
 .checked {
-  color: var(--accent01);
+  color: #ff7b00;
 }
 
 li:hover>.checked{
-  color: var(--accent02);
+  color: var(--accent01);
   transition: 0.2s;
 }
 

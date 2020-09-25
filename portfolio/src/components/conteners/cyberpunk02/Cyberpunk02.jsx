@@ -15,7 +15,7 @@ import node from './img/node002.svg';
 import php from './img/php002.svg';
 import python from './img/python002.svg';
 import sass from './img/sass002.svg';
-import { container, upperTrivia, mainContent, skillEmblem, skillText, checked} from'./style.module.css';
+import { container, mainContent, skillEmblem, skillText, checked} from'./style.module.css';
 
 function Cyberpunk02(props) {
   const {
@@ -51,11 +51,11 @@ function Cyberpunk02(props) {
           <div className={skillText}>
             <span>{text}</span>
           </div>
-          <span className= {raiting < 1 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
-          <span className= {raiting < 2 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
-          <span className= {raiting < 3 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
-          <span className= {raiting < 4 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
-          <span className= {raiting < 5 ? "fa fa-star" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 1 ? "fa fa-spinner fa-pulse" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 2 ? "fa fa-spinner fa-pulse" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 3 ? "fa fa-spinner fa-pulse" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 4 ? "fa fa-spinner fa-pulse" : `fa fa-star ${checked}`}></span>
+          <span className= {raiting < 5 ? "fa fa-spinner fa-pulse" : `fa fa-star ${checked}`}></span>
         </li>
       </ul>
     </div>

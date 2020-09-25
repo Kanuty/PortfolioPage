@@ -4,7 +4,7 @@ import GlitchedText from '../../components/glitchedText';
 import Cyberpunk03 from '../../components/conteners/cyberpunk03'
 import warhammer01 from './img/Warhammer01.png';
 import warhammer02 from './img/Warhammer02.png';
-import nasa from './img/nasa01.png';
+import nasa from './img/Nasa01.png';
 import './style.module.css';
 
 function Gallery() {

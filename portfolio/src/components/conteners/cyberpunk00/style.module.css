@@ -1,12 +1,12 @@
 .cyberLongSquere {
+  align-content: center;
   display: flex;
   background: url('./img/cyberLongSquere.svg') no-repeat;
   background-size: 100%;
+  justify-content: center;
   margin: 5px;
   min-height: 300px;
   min-width: 800px;
-  justify-content: center;
-  align-content: center;
 }
 
 

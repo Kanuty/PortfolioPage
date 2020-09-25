@@ -28,13 +28,33 @@ body{
   left: 5%;
   margin: auto;
   width: 90%;
+  min-height:100%
+}
+
+.appContainer::before {
+  animation: horizontalScroll 500s linear infinite;
+  background: url('./img/BackgroundFull000.jpg');
+  background-size: 100%;
+  content: "";
+  left: 0;
+  height: 100%;  
+  opacity: .02; 
+  position: absolute;
+  top: 0; 
+  width: 100%; 
+  z-index: -100;
+}
+
+@keyframes horizontalScroll {
+  100%{
+   background-position:-3000px 0px;
+ }
 }
 
 .globalContainer {
   margin-left: 10px;
 }
 
-/*to do - media qyerry*/
 /* utility classes */
 
 .hidden {

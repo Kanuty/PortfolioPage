@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Skills from './pages/Skills';
+import FourZeroFour from './pages/FourZeroFour';
 
 import './App.css';
 
@@ -18,11 +19,12 @@ function App() {
       <Navigation></Navigation>
         <div className="appContainer">
           <Switch>
-            <Route path="/" exact component={Home}></Route>
-            <Route path="/about" component={About}></Route>
-            <Route path="/gallery" component={Gallery}></Route>
-            <Route path="/contact" component={Contact}></Route>
-            <Route path="/skills" component={Skills}></Route>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/about" component={About}></Route>
+            <Route exact path="/gallery" component={Gallery}></Route>
+            <Route exact path="/contact" component={Contact}></Route>
+            <Route exact path="/skills" component={Skills}></Route>
+            <Route component={FourZeroFour}></Route>
           </Switch>
         </div>
       </Router>

@@ -8,7 +8,7 @@ function ContactForm() {
 
   function sendEmail(e){
   e.preventDefault();
-  emailjs.sendForm('gmail', 'template_4m03hq3', e.target, 'user_yLD1UJxwwI10YxMceFHVC')
+  emailjs.sendForm('CyberKanut55', 'template_4m03hq3', e.target, 'user_yLD1UJxwwI10YxMceFHVC')
     .then((result) => {
         console.log(result.text);
     }, (error) => {

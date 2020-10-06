@@ -1,0 +1,23 @@
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  color: var(--accent01);
+  text-shadow: 1px 1px 10px var(--accent02);
+  margin: 3px;
+  padding: 3px;
+}
+
+.contactForm input, textarea{
+  border: 2px solid var(--accent01);
+  box-shadow: 1px 1px 5px var(--accent01);
+  background-color: black;
+  margin: 10px;
+  padding: 3px;
+  color: var(--accent01);
+  text-shadow: 1px 1px 10px var(--accent02);
+}
+
+.contactForm input[type=submit]{
+  border: 2px solid var(--accent02);
+  box-shadow: 1px 1px 5px var(--accent02);
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 
+import { contactForm } from'./style.module.css';
+
 function ContactForm() {
 
   function sendEmail(e){
@@ -17,7 +19,7 @@ function ContactForm() {
 
   return (
     <form
-      className="contact-form"
+      className={contactForm}
       onSubmit={sendEmail}
     >
       <label>Name</label>

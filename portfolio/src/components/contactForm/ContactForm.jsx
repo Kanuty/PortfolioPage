@@ -29,25 +29,33 @@ function ContactForm() {
         onSubmit={sendEmail}
         autoComplete="off"
       >
+        {emailSent?  <span>Email Sent!</span> : <span></span>}
+        <span>Fields with * are required</span>
         <div className={input}>
           <input id="name" type="text" className={inputElement} placeholder=" " name="from_name" required/>
-          <label className={inputLabel} htmlFor="name">Your name</label>
+          <label className={inputLabel} htmlFor="name">Your name*</label>
+        </div>
+        <div className={input}>
+          <input id="surname" type="text" className={inputElement} placeholder=" " name="from_surname" />
+          <label className={inputLabel} htmlFor="name">Your surname</label>
         </div>
         <div className={input}>
           <input id="email" type="email" className={inputElement} placeholder=" " name="from_email" required/>
-          <label className={inputLabel} htmlFor="email">Email</label>
+          <label className={inputLabel} htmlFor="email">Email*</label>
+        </div>
+        <div className={input}>
+          <input id="phone" type="tel" className={inputElement} placeholder=" " name="from_phone" />
+          <label className={inputLabel} htmlFor="email">Telephone number</label>
         </div>
         <div className={input}>
           <input id="subject" type="subject" className={inputElement} placeholder=" " name="subject" required/>
-          <label className={inputLabel} htmlFor="subject">Subject</label>
+          <label className={inputLabel} htmlFor="subject">Subject*</label>
         </div>
         <div className={input}>
           <textarea id="message" className={inputElement} placeholder=" " name="message" required/>
-          <label className={inputLabel} htmlFor="message">Message</label>
+          <label className={inputLabel} htmlFor="message">Message*</label>
         </div>
         <input type="submit" className={inputButton} placeholder="" value="Send" required/>
-        {emailSent?  <span>Email Sent!</span> : <span></span>}
-        
       </form>
     </React.Fragment>
   )

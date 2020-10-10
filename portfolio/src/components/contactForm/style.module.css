@@ -32,11 +32,24 @@
   animation-delay: 1s;
 }
 
+.contactForm > *:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.contactForm > *:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.contactForm > *:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
 .contactForm span {
   color: var(--accent01);
   letter-spacing: 3px;
   font-family: monospace;
   text-shadow: 1px 1px 10px var(--accent02);
+  text-align: center;
 }
 
 .input {

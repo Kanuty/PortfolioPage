@@ -44,6 +44,10 @@
   animation-delay: 1.6s;
 }
 
+.contactForm > *:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
 .contactForm span {
   color: var(--accent01);
   letter-spacing: 3px;

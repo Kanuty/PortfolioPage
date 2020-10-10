@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import { button, buttonIcon, buttonLabel, contactForm, input, inputElement, inputLabel } from'./style.module.css';
+import { contactForm, input, inputElement, inputLabel, inputButton } from'./style.module.css';
 
 function ContactForm() {
+
+  const [emailSent, setEmailSent] = useState(false);
 
   function sendEmail(e){
   e.preventDefault();
   emailjs.sendForm('CyberKanut55', 'template_4m03hq3', e.target, 'user_yLD1UJxwwI10YxMceFHVC')
     .then((result) => {
         console.log(result.text);
+        setEmailSent(true);
+          setTimeout(() => {
+            setEmailSent(false)
+          }, 3000);
     }, (error) => {
         console.log(error.text);
     });
@@ -17,33 +23,33 @@ function ContactForm() {
   }
 
   return (
-    <form
-      className={contactForm}
-      onSubmit={sendEmail}
-    >
-      {/* <label>Name</label>
-      <input type="text" placeholder="" name="from_name" required />
-      <label>Email</label>
-      <input type="email" placeholder="" name="from_email" required/>
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" placeholder="" value="Send" required/> */}
-      <div className={input}>
-        <input id="name" type="text" className={inputElement} placeholder=" " name="form_name" required/>
-        <label className={inputLabel} htmlFor="name">Your name</label>
-      </div>
-      <div className={input}>
-        <input id="email" type="email" className={inputElement} placeholder=" " name="form_email" required/>
-        <label className={inputLabel} htmlFor="email">Email</label>
-      </div>
-      <div className={input}>
-        <textarea id="email" type="email" className={inputElement} placeholder=" " name="message" required/>
-        <label className={inputLabel} htmlFor="email">Message</label>
-      </div>
-      <button type="button" className={button}>
-        <div className={buttonLabel}>Send</div>
-      </button>
-    </form>
+    <React.Fragment>
+      <form
+        className={contactForm}
+        onSubmit={sendEmail}
+        autoComplete="off"
+      >
+        <div className={input}>
+          <input id="name" type="text" className={inputElement} placeholder=" " name="from_name" required/>
+          <label className={inputLabel} htmlFor="name">Your name</label>
+        </div>
+        <div className={input}>
+          <input id="email" type="email" className={inputElement} placeholder=" " name="from_email" required/>
+          <label className={inputLabel} htmlFor="email">Email</label>
+        </div>
+        <div className={input}>
+          <input id="subject" type="subject" className={inputElement} placeholder=" " name="subject" required/>
+          <label className={inputLabel} htmlFor="subject">Subject</label>
+        </div>
+        <div className={input}>
+          <textarea id="message" className={inputElement} placeholder=" " name="message" required/>
+          <label className={inputLabel} htmlFor="message">Message</label>
+        </div>
+        <input type="submit" className={inputButton} placeholder="" value="Send" required/>
+        {emailSent?  <span>Email Sent!</span> : <span></span>}
+        
+      </form>
+    </React.Fragment>
   )
 };
 

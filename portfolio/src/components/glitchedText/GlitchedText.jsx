@@ -11,7 +11,13 @@ const GlitchedText = (props) => {
   return (
       <div className={heroHeading}>
         <div className={glitchWrapper}>
-          <div className={glitch} data-text={text} translate="no">{text}</div>
+          <div 
+            className={`${glitch} 'notranslate'`}
+            data-text={text}
+            translate="no"
+          >
+            {text}
+          </div>
         </div>
       </div>
   )

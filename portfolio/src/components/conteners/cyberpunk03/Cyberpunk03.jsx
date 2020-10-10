@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { cartContainer, pictureSection, textSection, hexagon, waves} from'./style.module.css';
+import { cartContainer, pictureSection, textSection, waves} from'./style.module.css';
 
 function Cyberpunk03(props) {
   const {
@@ -14,15 +14,13 @@ function Cyberpunk03(props) {
   
   return (
     <div className={cartContainer}>
-      <div className={waves}>
-        <div className={`${pictureSection} ${hexagon}`}>
-          <img src={imagePath} alt={imageAlt}></img>
-        </div>
-        <div className={textSection}>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <a target="_blank" href={link}>{link}</a>
-        </div>
+      <div className={pictureSection}>
+        <img src={imagePath} alt={imageAlt}></img>
+      </div>
+      <div className={textSection}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <a target="_blank" href={link}>{link}</a>
       </div>
     </div>
   );

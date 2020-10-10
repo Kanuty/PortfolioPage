@@ -10,6 +10,17 @@
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .contactForm {
+    grid-gap: 22px;
+    padding: 1px;
+    margin: 2px;
+  }
+  .contactForm span{
+    font-size: 12px;
+  }
+}
+
 .contactForm > * {
   position: relative;
   opacity: 0;
@@ -60,6 +71,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  align-self: center;
   width: 100%;
   resize: none;
 }
@@ -81,6 +93,7 @@
   transition: box-shadow 0.4s ease;
   border-radius: 3px;
 }
+
 
 .inputElement:focus {
   box-shadow: inset 0 0 3px 1px var(--accent02);
@@ -121,6 +134,27 @@
   margin-right: 10px;
   width: 100%;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .contactForm {
+    min-height: 100px;
+    min-width: 200px;
+  }
+
+  .inputElement {
+    height: 26px;
+    width: 100%;
+  }
+
+  .input textarea{
+    min-height: 100px;
+    min-width: 200px;
+  }
+
+  .inputButton {
+    width: 100%;
+  }
 }
 
 @keyframes fade-in {

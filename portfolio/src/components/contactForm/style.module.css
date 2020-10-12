@@ -24,7 +24,7 @@
 .contactForm > * {
   position: relative;
   opacity: 0;
-  animation: fade-in 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+  animation: fade-in 0.2s cubic-bezier(0.2, 0.3, 0.4, 1) forwards;
 }
 
 .contactForm > *:nth-child(2) {
@@ -125,7 +125,7 @@
   letter-spacing: 3px;
   font-family: monospace;
   padding: 8px 10px;
-  border: 1px solid var(--accent01);
+  border: 1px solid var(--accent03);
   text-shadow: 1px 1px 3px var(--accent02);
   border-radius: 4px;
   background: transparent;
@@ -134,6 +134,13 @@
   margin-right: 10px;
   width: 100%;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.inputButton:hover {
+  color: var(--accent01);
+  border: 1px solid var(--accent01);
+  text-shadow: 1px 1px 3px var(--accent02);
 }
 
 @media (max-width: 1000px) {

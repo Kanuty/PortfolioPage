@@ -25,13 +25,13 @@ h5  {
 }
 
 .contactButton{
-  color: var(--accent01);
-  font-size: 11px;
+  color: var(--accent03);
+  font-size: 14px;
   letter-spacing: 3px;
   font-family: monospace;
   padding: 8px 10px;
-  border: 1px solid var(--accent01);
-  text-shadow: 1px 1px 3px var(--accent01);
+  border: 1px solid var(--accent03);
+  text-shadow: 1px 1px 1px var(--accent02);
   border-radius: 4px;
   background: transparent;
   text-transform: uppercase;
@@ -40,12 +40,56 @@ h5  {
   width: 30%;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .contactButton:hover {
-  color: var(--accent03);
-  border: 1px solid var(--accent03);
+  color: var(--accent01);
+  border: 1px solid var(--accent01);
   text-shadow: 1px 1px 3px var(--accent02);
+}
+
+.homeContainer > * {
+  position: relative;
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.2, 0.3, 0.4, 1) forwards;
+}
+
+.homeContainer > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.homeContainer > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.homeContainer > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.homeContainer > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.homeContainer > *:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.homeContainer > *:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(16px, 16px, 16px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -70,5 +114,4 @@ h5  {
     padding: 1px;
     margin: 1px;
   }
-
 }

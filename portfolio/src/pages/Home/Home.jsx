@@ -1,6 +1,8 @@
 import React from 'react';
 
 import GlitchedText from '../../components/glitchedText';
+import { Link } from 'react-router-dom'
+
 import {contactButton, description, homeContainer} from './style.module.css';
 
 function Home() {
@@ -22,7 +24,7 @@ function Home() {
           we will not be able to face future prepered. </p>
         <img src={require('./img/timeline.svg')} alt='Timeline'></img>
         <p className={description}>If you have a job proposition, or you  want to help me grow as a developer in another way than:</p>
-        <button className={contactButton}>Contact me</button>
+        <Link className={contactButton}to='/contact'> Contact me </Link>
       </div>
     </div>
   );

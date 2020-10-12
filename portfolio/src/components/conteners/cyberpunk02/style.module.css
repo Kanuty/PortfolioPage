@@ -75,7 +75,7 @@
 }
 
 .checked {
-  color: #ff7b00;
+  color: var(--accent03);
 }
 
 li:hover>.checked{

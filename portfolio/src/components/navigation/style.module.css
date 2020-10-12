@@ -1,6 +1,7 @@
-Header{
+header{
   background: var(--dark-black);
-  color: var(--neutral-tex);
+  border-right: 1px solid var(--accent03);
+  box-shadow: 1px 1px 5px var(--accent02);
   height: 100%;
   position: fixed;
   display: flex;
@@ -20,7 +21,7 @@ nav{
 /* Link is treated as an "a" tag */
 
 nav a{
-  color: var(--neutral-tex);
+  color: var(--accent03);
   cursor: pointer;
   display: block;
   font-size: 20px;
@@ -115,6 +116,10 @@ ul li {
 ul li a img{
   max-height: 30px;
   max-width: 30px;
+}
+
+.logo {
+  margin: 3px;
 }
 
 

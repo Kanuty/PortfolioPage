@@ -8,6 +8,7 @@ function About() {
   return (
     <div className="globalContainer">
       <GlitchedText text="About"></GlitchedText>
+      <h3>Under construction</h3>
       <Cyberpunk01 ></Cyberpunk01>
     </div>
   );

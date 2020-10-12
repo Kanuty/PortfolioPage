@@ -60,7 +60,7 @@
 }
 
 .contactForm span {
-  color: var(--accent01);
+  color: var(--accent03);
   letter-spacing: 3px;
   font-family: monospace;
   text-shadow: 1px 1px 10px var(--accent02);
@@ -120,13 +120,13 @@
 }
 
 .inputButton {
-  color: var(--accent01);
+  color: var(--accent03);
   font-size: 11px;
   letter-spacing: 3px;
   font-family: monospace;
   padding: 8px 10px;
   border: 1px solid var(--accent01);
-  text-shadow: 1px 1px 10px var(--accent02);
+  text-shadow: 1px 1px 3px var(--accent02);
   border-radius: 4px;
   background: transparent;
   text-transform: uppercase;

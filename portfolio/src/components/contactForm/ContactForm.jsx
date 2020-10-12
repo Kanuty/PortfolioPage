@@ -29,7 +29,6 @@ function ContactForm() {
         onSubmit={sendEmail}
         autoComplete="off"
       >
-        {emailSent?  <span>Email Sent!</span> : <span></span>}
         <span>Fields with * are required</span>
         <div className={input}>
           <input id="name" type="text" className={inputElement} placeholder=" " name="from_name" required/>
@@ -56,6 +55,7 @@ function ContactForm() {
           <label className={inputLabel} htmlFor="message">Message*</label>
         </div>
         <input type="submit" className={inputButton} placeholder="" value="Send" required/>
+        {emailSent?  <span>Email Sent!</span> : <span></span>}
       </form>
     </React.Fragment>
   )

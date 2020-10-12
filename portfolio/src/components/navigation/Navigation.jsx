@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faDiceD20, faGem, faHome, faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import "./style.module.css"
+import { logo } from "./style.module.css"
 
 const Navigation = (props) => {
   const {
@@ -13,38 +13,38 @@ const Navigation = (props) => {
   } = props;
 
   return (
-  <header>
-    <img src={require("./img/logo008.svg")} alt='logo'/>
-    <nav>
-      <Link to='/'>
+    <header>
+      <img src={require("./img/logo008.svg")} className={logo} alt='logo'/>
+      <nav>
+        <Link to='/'>
           <FontAwesomeIcon icon={faHome} />
-      </Link>
-      <Link to='/about'>
+        </Link>
+        <Link to='/about'>
           <FontAwesomeIcon icon={faUserSecret} />
-      </Link>
-      <Link to='/skills'>
+        </Link>
+        <Link to='/skills'>
           <FontAwesomeIcon icon={faDiceD20} />
-      </Link>
-      <Link to='/gallery'>
+        </Link>
+        <Link to='/gallery'>
           <FontAwesomeIcon icon={faGem} />
-      </Link>
-      <Link to='/contact'>
+        </Link>
+        <Link to='/contact'>
           <FontAwesomeIcon icon={faAddressCard} />
-      </Link>
-    </nav>
-    <ul>
-      <li>
-        <a href={linkedinLink} target="_blank">
-          <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
-        </a>
-      </li>
-      <li>
-        <a href={facebookLink} target="_blank">
-          <img src={require("./img/fb001.svg")} alt='facebook'/>
-        </a>
-      </li>
-    </ul>
-  </header>
+        </Link>
+      </nav>
+      <ul>
+        <li>
+          <a href={linkedinLink} target="_blank">
+            <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
+          </a>
+        </li>
+        <li>
+          <a href={facebookLink} target="_blank">
+            <img src={require("./img/fb001.svg")} alt='facebook'/>
+          </a>
+        </li>
+      </ul>
+    </header>
   )
 };
 

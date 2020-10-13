@@ -78,7 +78,7 @@ nav a:first-child+a+a:after{
 }
 
 nav a:first-child+a+a+a:after{
-  content: 'MY WORK';
+  content: 'WORK';
 }
 
 nav a:last-child:after{

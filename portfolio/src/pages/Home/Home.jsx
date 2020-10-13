@@ -20,7 +20,7 @@ function Home() {
           But main main goal is to make proffesional tools for academic that will help
           research and show everything related to international studies.
           Ideas, people, teritory... sociology, military, economics, politics...
-          World is changing  more rapid than JS frameworks. Without modern tools
+          World is changing  more rapid then JS frameworks. Without modern tools
           we will not be able to face future prepered. </p>
         <img src={require('./img/timeline.svg')} alt='Timeline'></img>
         <p className={description}>If you have a job proposition, or you  want to help me grow as a developer in another way than:</p>

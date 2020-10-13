@@ -126,8 +126,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="356.90241"
-     inkscape:cy="131.04134"
+     inkscape:cx="460.49356"
+     inkscape:cy="129.62712"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -328,8 +328,8 @@
        id="path1130"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#00d9ff;stroke-width:0.3000094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 133.64023,269.70118 h 11.90625"
+       style="fill:none;stroke:#00d9ff;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 135.97884,269.79472 h 11.90625"
        id="path1132"
        inkscape:connector-curvature="0" />
     <text
@@ -423,11 +423,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.2;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="81.103447"
+       x="80.822815"
        y="226.85272"
        id="text1036-7-9-2-9-0-5-8-6"><tspan
          sodipodi:role="line"
-         x="81.738037"
+         x="81.457405"
          y="226.85272"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:0.2;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.26458332"
          id="tspan1428"><tspan
@@ -514,14 +514,19 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.2;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff00c6;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
-       x="80.476044"
-       y="240.87645"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.2;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ff00c6;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="80.3825"
+       y="240.40872"
        id="text1036-7-9-2-9-0-5-8-6-1"><tspan
          sodipodi:role="line"
-         x="80.476044"
-         y="240.87645"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:0.2;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;text-anchor:middle;fill:#ff00c6;fill-opacity:1;stroke-width:0.26458332;"
+         x="80.3825"
+         y="240.40872"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:0.2;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;text-anchor:middle;fill:#ff00c6;fill-opacity:1;stroke-width:0.26458332"
          id="tspan1428-0">Member of the Revision Committee of KSSM UJ</tspan></text>
+    <path
+       style="fill:none;stroke:#00dfff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 133.44067,289.79709 h 6.26813"
+       id="path1132-3-6-29"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

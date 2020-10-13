@@ -33,7 +33,6 @@ body{
 }
 
 .appContainer::before {
-  animation: horizontalScroll 500s linear infinite;
   background: url('./img/BackgroundFull000.jpg');
   background-size: 100%;
   background-repeat: repeat-y;
@@ -45,12 +44,6 @@ body{
   top: 0; 
   width: 100%; 
   z-index: -100;
-}
-
-@keyframes horizontalScroll {
-  100%{
-   background-position:-3000px 0px;
- }
 }
 
 .globalContainer {

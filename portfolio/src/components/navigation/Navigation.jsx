@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faDiceD20, faGem, faHome, faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { logo } from "./style.module.css"
+import { logo, laungageFlag } from "./style.module.css"
 
 const Navigation = (props) => {
   const {

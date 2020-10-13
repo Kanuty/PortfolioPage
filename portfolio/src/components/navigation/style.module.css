@@ -68,6 +68,7 @@ nav a:active{
 nav a:first-child:after{
   content: 'HOME';
 }
+
 nav a:first-child+a:after{
   content: 'ABOUT';
 }
@@ -121,6 +122,3 @@ ul li a img{
 .logo {
   margin: 3px;
 }
-
-
-

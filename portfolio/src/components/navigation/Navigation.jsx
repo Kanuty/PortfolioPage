@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faDiceD20, faGem, faHome, faUserSecret } from '@fortawesome/free-solid-svg-icons'
-import { logo, laungageFlag } from "./style.module.css"
+import { logo } from "./style.module.css"
 
 const Navigation = (props) => {
   const {
+    artStationLink,
+    facebookLink,
+    gitLink,
     linkedinLink,
-    facebookLink
   } = props;
 
   return (
@@ -33,14 +35,24 @@ const Navigation = (props) => {
         </Link>
       </nav>
       <ul>
-        <li>
-          <a href={linkedinLink} target="_blank">
-            <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
+      <li>
+          <a href={artStationLink} target="_blank">
+            <img src={require("./img/artStation001.svg")} alt='artStation'/>
           </a>
         </li>
         <li>
           <a href={facebookLink} target="_blank">
             <img src={require("./img/fb001.svg")} alt='facebook'/>
+          </a>
+        </li>
+        <li>
+          <a href={gitLink} target="_blank">
+            <img src={require("./img/git001.svg")} alt='github'/>
+          </a>
+        </li>
+        <li>
+          <a href={linkedinLink} target="_blank">
+            <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
           </a>
         </li>
       </ul>
@@ -49,13 +61,17 @@ const Navigation = (props) => {
 };
 
 Navigation.propTypes = {
-  linkedinLink: PropTypes.string,
+  artStationLink: PropTypes.string,
   facebookLink: PropTypes.string,
+  gitLink: PropTypes.string,
+  linkedinLink: PropTypes.string,
 };
 
 Navigation.defaultProps = {
-  linkedinLink: 'https://www.linkedin.com/in/bartosz-dudek-050362120/',
+  artStationLink: 'https://www.artstation.com/kanut/albums/1134764',
   facebookLink: 'https://www.facebook.com/bartosz.dudek.9/',
+  gitLink: 'https://github.com/Kanuty',
+  linkedinLink: 'https://www.linkedin.com/in/bartosz-dudek-050362120/',
 };
 
 export default (Navigation);

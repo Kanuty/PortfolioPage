@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { cartContainer, pictureSection, textSection, waves} from'./style.module.css';
+import { cartContainer, pictureSection, textSection } from'./style.module.css';
 
 function Cyberpunk03(props) {
   const {

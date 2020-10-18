@@ -19,11 +19,11 @@ function Home() {
           But main main goal is to make professional tools for academic that will help
           research and show everything related to international studies.
           Ideas, people, territory... sociology, military, economics, politics...
-          World is changing more rapidly then JS frameworks. Without modern tools
+          World is changing more rapidly than JS frameworks. Without modern tools
           we will not be able to face future prepared. </p>
         <img src={require('./img/timeline.svg')} alt='Timeline'></img>
         <p className={`${description} ${note}`}>*KSSM  UJ = International Relations Student’s Association at Jagiellonian University </p>
-        <p className={description}>If you have a job offer, or you  want to help me grow as a developer in another way than:</p>
+        <p className={description}>If you have a job offer or you  want to help me grow as a developer in another way than:</p>
         <Link className={contactButton}to='/contact'> Contact me </Link>
       </div>
     </div>

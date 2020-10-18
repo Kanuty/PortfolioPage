@@ -10,24 +10,24 @@ import './style.module.css';
 function Gallery() {
   return (
     <div className="globalContainer">
-      <GlitchedText text="Old Projects"/>
+      <GlitchedText text="Projects"/>
       <Cyberpunk03
         title="Warhammer Loot Generator 2.0"
-        description="wip"
+        description="Second iteration of my loot generator. (Alpha version). To generate loot, you have to at first unlock at  least 1 item by clicking collerated icon."
         link="https://warhammergmtoolkit.netlify.app/"
         imagePath={warhammer02}
         imageAlt="Warhammer"
       />
       <Cyberpunk03
         title="Warhammer Loot Generator 1.0"
-        description="wip"
+        description="My first program in JS. Made for a RPG campaign."
         link="https://randomlootgenerator.netlify.app/"
         imagePath={warhammer01}
         imageAlt="Warhammer"
       />
       <Cyberpunk03
         title="SPACER"
-        description="Nasa images searcher. App created with help of 'Hello Roman' tutorial"
+        description="Nasa images searcher. App created with help of 'Hello Roman' tutorial."
         link="https://spacer-kanut.netlify.app/"
         imagePath={nasa}
         imageAlt="Space"

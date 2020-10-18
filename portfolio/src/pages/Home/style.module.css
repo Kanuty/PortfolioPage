@@ -11,7 +11,7 @@
   width: 1000px;
 }
 
-h5  {
+.homeContainer h5 {
   color: var(--accent03);
   text-shadow: 1px 1px 3px var(--accent02);
 }
@@ -24,7 +24,14 @@ h5  {
   text-justify: inter-word;
 }
 
-.contactButton{
+.note {
+  font-size: 14px;
+  color: var(--accent03);
+  text-shadow: 1px 1px 3px var(--accent02);
+  margin: 2px;
+}
+
+.contactButton {
   color: var(--accent03);
   font-size: 14px;
   letter-spacing: 3px;
@@ -79,6 +86,9 @@ h5  {
   animation-delay: 0.7s;
 }
 
+.homeContainer > *:nth-child(6) {
+  animation-delay: 0.8s;
+}
 
 @keyframes fade-in {
   0% {
@@ -96,10 +106,12 @@ h5  {
   .contactButton {
     width: 200px;
   }
+
   .homeContainer {
-    height: 110%;
+    height: 120%;
     margin-top: 10px;
     font-size: 14px;
+    margin-bottom: 30px;
   }
   
   .homeContainer img{
@@ -108,10 +120,5 @@ h5  {
 
   .description{
     max-width: 80%;
-  }
-
-  h3{
-    padding: 1px;
-    margin: 1px;
   }
 }

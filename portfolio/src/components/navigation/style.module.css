@@ -69,15 +69,11 @@ nav a:first-child:after{
   content: 'HOME';
 }
 
-nav a:first-child+a:after{
-  content: 'ABOUT';
-}
-
-nav a:first-child+a+a:after{
+nav a:first-child+a+:after{
   content: 'SKILLS';
 }
 
-nav a:first-child+a+a+a:after{
+nav a:first-child+a+a:after{
   content: 'WORK';
 }
 
@@ -121,4 +117,17 @@ ul li a img{
 
 .logo {
   margin: 3px;
+}
+
+@media (max-width: 1000px) {
+  nav a{
+    font-size: 19px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  ul li a img{
+    max-height: 24px;
+    max-width: 24px;
+  }
 }

@@ -1,0 +1,25 @@
+.info {
+  font-size: 14px;
+  color: var(--accent01);
+  text-shadow: 1px 1px 3px var(--accent02);
+  margin: 2px;
+  font-family: monospace;
+}
+
+.skillsInfo {
+  color: var(--accent03);
+  display:flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.skillsInfo > * {
+  margin: 6px;
+}
+
+.skillsInfo > li > span{
+  float: left;
+  text-align: center;
+}
+
+

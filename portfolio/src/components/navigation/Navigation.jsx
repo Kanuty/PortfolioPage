@@ -21,9 +21,9 @@ const Navigation = (props) => {
         <Link to='/'>
           <FontAwesomeIcon icon={faHome} />
         </Link>
-        <Link to='/about'>
+        {/* <Link to='/about'>
           <FontAwesomeIcon icon={faUserSecret} />
-        </Link>
+        </Link> */}
         <Link to='/skills'>
           <FontAwesomeIcon icon={faDiceD20} />
         </Link>

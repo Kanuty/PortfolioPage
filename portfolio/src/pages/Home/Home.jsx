@@ -11,7 +11,7 @@ function Home() {
       <GlitchedText text='Home'></GlitchedText>
       <div className={homeContainer}>
         <h3>Bartosz "Kanut" Dudek</h3>
-        <h5>Front-end Developer (React)</h5>
+        <h4>Front-end Developer (React)</h4>
         <p className={description}>My current goal is to become capable and self-sufficient web developer.
           I want to create web pages and applications that will improve life on daily basis.
           Tools for RPG games? Of course! Social platforms for self development? Sure!

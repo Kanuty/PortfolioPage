@@ -1,7 +1,6 @@
 .info {
-  font-size: 14px;
-  color: var(--accent01);
-  text-shadow: 1px 1px 3px var(--accent02);
+  font-size: 15px;
+  color: var(--accent01-Saturated);
   margin: 2px;
   font-family: monospace;
 }
@@ -21,5 +20,3 @@
   float: left;
   text-align: center;
 }
-
-

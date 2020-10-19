@@ -63,7 +63,7 @@
   color: var(--accent03);
   letter-spacing: 3px;
   font-family: monospace;
-  text-shadow: 1px 1px 10px var(--accent02);
+  text-shadow: var(--text-Shadow02);
   text-align: center;
 }
 
@@ -126,7 +126,7 @@
   font-family: monospace;
   padding: 8px 10px;
   border: 1px solid var(--accent03);
-  text-shadow: 1px 1px 3px var(--accent02);
+  text-shadow: var(--text-Shadow02);
   border-radius: 4px;
   background: transparent;
   text-transform: uppercase;
@@ -140,7 +140,6 @@
 .inputButton:hover {
   color: var(--accent01);
   border: 1px solid var(--accent01);
-  text-shadow: 1px 1px 3px var(--accent02);
 }
 
 @media (max-width: 1000px) {

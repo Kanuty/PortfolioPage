@@ -1,10 +1,17 @@
-:root {
-  --accent01: #00ffff;
-  --accent02: #ff00ff;
-  --accent03: #F0BC00;
+:root{
+  --accent01: #56D8FF;
+  --accent02: #FF8CA5;
+  --accent03: #FFDA56;
+  --accent01-Saturated: #00c3ff;
+  --accent02-Saturated: #ff0055;
+  --accent03-Saturated: #ffc800;
   --neutral-grey: #909096;
-  --dark-black: #181818;
+  --dark-black: #111111;
   --medium-black: #1d1d1d;
+
+  --text-Shadow01: 1px 1px 1px var(--accent01-Saturated);
+  --text-Shadow02: 1px 1px 1px var(--accent02-Saturated);
+  --text-Shadow03: 1px 1px 1px var(--accent03-Saturated);
 }
 
 *,*:after, *:before {
@@ -15,8 +22,8 @@
 body{
   user-select: none;
   font: 18px 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  color: #444;
-  background: var(--medium-black);
+  color: var(--neutral-grey);
+  background: var(--dark-black);
   overflow: visible;
   display: block;
   margin: 0;

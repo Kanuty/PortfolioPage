@@ -9,7 +9,6 @@
   min-width: 800px;
 }
 
-
 @media (max-width: 1000px) {
   .cyberLongSquere {
     display: flex;
@@ -18,5 +17,6 @@
     background-size: 100%;
     min-height: 800px;
     min-width: 300px;
+    padding: 4px;
   }
 }

@@ -19,7 +19,7 @@
 .mainContent{
   animation: verticalScroll 400s linear infinite;
   border: 1px solid var(--accent01);
-  box-shadow: 1px 1px 5px var(--accent01);
+  box-shadow: 1px 1px 1px var(--accent02-Saturated);
   background: url('./img/backgroundWaves.svg');
   background-size: 100%;
   min-height: 90%;
@@ -63,8 +63,6 @@
   .container ul{
     width: 70%;
     margin: 1px;
-    border: 1px solid var(--accent02);
-    box-shadow: 1px 1px 5px var(--accent02);
     z-index: 10;
     max-width: 98%;
   }
@@ -72,7 +70,7 @@
 
 .skillText{
   font-size: 25px;
-  text-shadow:1px 1px 4px var(--accent02);
+  text-shadow: var(--text-Shadow02);
   color: var(--accent01);
   padding: 10px;
   width: 100%;

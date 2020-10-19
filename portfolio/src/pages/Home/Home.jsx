@@ -20,7 +20,7 @@ function Home() {
           I want to create web pages and applications that will improve life on daily basis.
           Tools for RPG games? Of course! Social platforms for self development? Sure!
           
-          But main main goal is to make professional tools for academic that will help
+          But my main goal is to make professional tools for academic that will help
           research and show everything related to international studies.
           Ideas, people, territory... sociology, military, economics, politics...
           World is changing more rapidly than JS frameworks. Without modern tools

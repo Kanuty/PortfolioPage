@@ -15,15 +15,17 @@
   /* -webkit-box-align: center; */
           align-items: center;
 }
+
 .glitch {
   color: var(--accent01);
-  text-shadow: 1px 1px 5px var(--accent01);
+  text-shadow: 1px 1px 5px var(--accent02-Saturated);
   font-size: 50px;
   font-family: monospace;
   position: relative;
   display: inline-block;
   justify-content: center;
 }
+
 .glitch::before,
 .glitch::after {
   animation-delay: 5s;
@@ -35,18 +37,21 @@
   height: 100%;
   background: transparent;
 }
+
 .glitch::before {
   left: 2px;
-  text-shadow: -2px 0 #49FC00;
+  text-shadow: -2px 0 var(--accent02);
   clip: rect(24px, 550px, 90px, 0);
   animation: glitch-anim-2 4s infinite linear alternate-reverse;
 }
+
 .glitch::after {
   left: -2px;
   text-shadow: -2px 0 #b300fc;
   clip: rect(85px, 550px, 140px, 0);
   animation: glitch-anim 3.5s infinite linear alternate-reverse;
 }
+
 @-webkit-keyframes glitch-anim {
   0% {
     clip: rect(130px, 9999px, 15px, 0);

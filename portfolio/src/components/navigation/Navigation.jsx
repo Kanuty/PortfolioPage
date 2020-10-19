@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressCard, faDiceD20, faGem, faHome, faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faDiceD20, faGem, faHome } from '@fortawesome/free-solid-svg-icons'
 import { logo } from "./style.module.css"
 
 const Navigation = (props) => {
@@ -16,14 +16,13 @@ const Navigation = (props) => {
 
   return (
     <header>
-      <img src={require("./img/logo008.svg")} className={logo} alt='logo'/>
+      <Link to='/'>
+        <img src={require("./img/logo008.svg")} className={logo} alt='logo'/>
+      </Link>
       <nav>
         <Link to='/'>
           <FontAwesomeIcon icon={faHome} />
         </Link>
-        {/* <Link to='/about'>
-          <FontAwesomeIcon icon={faUserSecret} />
-        </Link> */}
         <Link to='/skills'>
           <FontAwesomeIcon icon={faDiceD20} />
         </Link>
@@ -36,22 +35,22 @@ const Navigation = (props) => {
       </nav>
       <ul>
       <li>
-          <a href={artStationLink} target="_blank">
+          <a href={artStationLink} target="null">
             <img src={require("./img/artStation001.svg")} alt='artStation'/>
           </a>
         </li>
         <li>
-          <a href={facebookLink} target="_blank">
+          <a href={facebookLink} target="null">
             <img src={require("./img/fb001.svg")} alt='facebook'/>
           </a>
         </li>
         <li>
-          <a href={gitLink} target="_blank">
+          <a href={gitLink} target="null">
             <img src={require("./img/git001.svg")} alt='github'/>
           </a>
         </li>
         <li>
-          <a href={linkedinLink} target="_blank">
+          <a href={linkedinLink} target="null">
             <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
           </a>
         </li>

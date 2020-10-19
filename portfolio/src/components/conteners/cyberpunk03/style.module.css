@@ -3,15 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 440px;
   font-family: monospace;
   border-radius: 5px;
-  border: 2px solid var(--accent01);
+  border: 3px solid var(--accent01);
   box-shadow: 1px 1px 5px var(--accent01);
-  margin: 15px;
+  margin: 35px;
   padding: 15px;
-  background: url('./img/cyber_squere02.svg') no-repeat;
+  background: url('./img/cyber_squere03.svg') no-repeat;
   background-size: 100%;
   z-index: -1;
 }
@@ -41,21 +41,21 @@
 
 .pictureSection img{
   display: inline-block;
-  max-height: 150px;
+  max-height: 170px;
   max-width: 200px;
   padding: 10px;
 }
 
 @media (max-width: 1000px) {
   .pictureSection{
-    max-height: 100px;
+    max-height: 90px;
     max-width: 150px;
     margin: 1px;
     padding: 1px;
   }
 
   .pictureSection img{
-    max-height: 120px;
+    max-height: 110px;
     max-width: 170px;
     padding-top: 10px;
   }

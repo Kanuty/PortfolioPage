@@ -5,9 +5,9 @@
   --accent01-Saturated: #00c3ff;
   --accent02-Saturated: #ff0055;
   --accent03-Saturated: #ffc800;
-  --neutral-grey: #909096;
+  --neutral-grey: #333333;
   --dark-black: #111111;
-  --medium-black: #1d1d1d;
+  --medium-black: #0B0B0C;
 
   --text-Shadow01: 1px 1px 1px var(--accent01-Saturated);
   --text-Shadow02: 1px 1px 1px var(--accent02-Saturated);
@@ -46,7 +46,7 @@ body{
   content: "";
   left: 0;
   height: 100%;  
-  opacity: .02; 
+  opacity: .015; 
   position: absolute;
   top: 0; 
   width: 100%; 
@@ -75,6 +75,10 @@ body{
   .appContainer {
     left: 12%;
     max-height: 90%;
+  }
+
+  .appContainer::before {
+    opacity: 0;
   }
 }
 

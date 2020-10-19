@@ -20,7 +20,7 @@ function Cyberpunk03(props) {
       <div className={textSection}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <a target="_blank" href={link}>{link}</a>
+        <a target="null" href={link}>{link}</a>
       </div>
     </div>
   );

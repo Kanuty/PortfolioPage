@@ -13,9 +13,9 @@
   .cyberLongSquere {
     display: flex;
     flex-direction: column;
-    background: url('./img/cyberLongSquere01.svg');
+    background: transparent;
     background-size: 100%;
-    min-height: 800px;
+    min-height: 850px;
     min-width: 300px;
     padding: 4px;
   }

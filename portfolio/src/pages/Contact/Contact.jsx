@@ -12,10 +12,10 @@ function Contact() {
         front-end, 2d/3d graphic or related to my academical background (international affairs, battlegroups of UE, strategic studies), don't hesitate to contact me using form below.
       </p>
       <p className={contactParagraph}>You can also contact me by:
-        <a className={contactImg} href='https://www.facebook.com/bartosz.dudek.9/' target="_blank">
+        <a className={contactImg} href='https://www.facebook.com/bartosz.dudek.9/' target="null">
           <img src={require("./img/fb001.svg")} alt='facebook'/>
         </a>
-        <a className={contactImg} href='https://www.linkedin.com/in/bartosz-dudek-050362120/' target="_blank">
+        <a className={contactImg} href='https://www.linkedin.com/in/bartosz-dudek-050362120/' target="null">
           <img src={require("./img/linkedin001.svg")} alt='linkedin'/>
         </a>
       </p>

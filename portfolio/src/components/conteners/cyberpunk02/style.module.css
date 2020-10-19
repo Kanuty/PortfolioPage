@@ -39,6 +39,7 @@
 
 .skillEmblem img{
   max-height: 95px;
+  transition: 1s;
 }
 
 .skillEmblem img:hover {
@@ -47,10 +48,12 @@
 }
 
 @media (max-width: 1000px) {
+
   .skillEmblem {
     margin: auto;
     width: 50%;
   }
+
   .container{
     max-width: 98%;
     max-height: 189px;
@@ -80,7 +83,7 @@
   color: var(--accent03);
 }
 
-li:hover>.checked{
+li:hover > .checked{
   color: var(--accent01);
   transition: 0.2s;
 }

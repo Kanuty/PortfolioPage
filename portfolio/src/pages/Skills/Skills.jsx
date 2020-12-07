@@ -8,7 +8,7 @@ import {info, skillsInfo} from'./style.module.css';
 function Skills() {
 const skillsBest  = [["HTML", 4], ["KRITA", 4], ["INKSCAPE", 4], ["CSS", 3], ["JS", 3]]
 const skillsMedicore  = [["REACT", 3], ["BLENDER", 3], ["SP", 2], ["SD", 2], ["GRAPHQL", 2]]
-const skillsNeglected  = [["REDUX", 2], ["SASS", 2], ["NODE.JS", 2], ["PHP", 1], ["PYTHON", 1]]
+const skillsNeglected  = [["REDUX", 2], ["SASS", 2], ["NODE.JS", 2], ["JAVA", 2], ["SQL", 2]]
   return (
     <div className="globalContainer">
       <GlitchedText text="Skills"></GlitchedText>

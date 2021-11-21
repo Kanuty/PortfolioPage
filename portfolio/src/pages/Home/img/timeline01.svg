@@ -22,6 +22,20 @@
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1281"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1045"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#00dfff;stroke-opacity:1;fill:#00dfff;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
        refY="0"
        refX="0"
        id="Arrow2Mend"
@@ -171,8 +185,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="176.96516"
-     inkscape:cy="105.19559"
+     inkscape:cx="365.40911"
+     inkscape:cy="119.33773"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -444,14 +458,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00f9ff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="116.50548"
+       x="117.44092"
        y="295.91953"
        id="text1036-7-9-2-9-0-5-7-41-1"><tspan
          sodipodi:role="line"
-         x="117.35159"
+         x="118.28703"
          y="295.91953"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:0;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;text-anchor:middle;fill:#00f9ff;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan1621-2">Junior Front-End Developer </tspan></text>
+         id="tspan1621-2"> Front-End Developer </tspan></text>
     <path
        style="fill:none;stroke:#0087ff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.8, 0.4, 0.2, 0.4;stroke-dashoffset:0;stroke-opacity:1"
        d="m 105.65895,268.65265 0.0923,7.86492"
@@ -518,5 +532,11 @@
          id="tspan1398"><tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:0.2;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;text-anchor:middle;fill:#ff4bba;fill-opacity:1;stroke-width:0.26458332"
    id="tspan1400">VIII European Socio-law Olympiad</tspan> </tspan></text>
+    <path
+       style="fill:none;stroke:#00dfff;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new;marker-end:url(#marker1281)"
+       d="m 126.74753,292.79051 h 10.95475"
+       id="path1132-3-6-29-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

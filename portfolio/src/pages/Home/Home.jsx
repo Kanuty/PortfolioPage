@@ -1,11 +1,13 @@
 import React from 'react';
 
+import CompaniesList from '../../components/conteners/companiesList';
 import GlitchedText from '../../components/glitchedText';
 import { Link } from 'react-router-dom'
 
-import { description, homeButton, info, homeContainer } from './style.module.css';
+import { description, homeButton, info, homeContainer, timeline, horizontalList } from './style.module.css';
 
 function Home() {
+
   return (
     <div className="globalContainer">
       <GlitchedText text='Home'></GlitchedText>
@@ -38,7 +40,17 @@ function Home() {
         <Link className={homeButton}to='/skills'>
           My skills
         </Link>
-        <img src={require('./img/timeline01.svg')} alt='Timeline'></img>
+        <img className={timeline} src={require('./img/timeline01.svg')} alt='Timeline'></img>
+        <p className={description}>Companies I had worked for:</p>
+        <ul  className={horizontalList}>
+          <li><CompaniesList text="Netins"></CompaniesList></li>
+          <li><CompaniesList text="Hicron"></CompaniesList></li>
+          <li><CompaniesList text="Play"></CompaniesList></li>
+        </ul>
+        <ul  className={horizontalList}>
+          <li><CompaniesList text="SuperDrob"></CompaniesList></li>
+          <li><CompaniesList text="SAP"></CompaniesList></li>
+        </ul>
         <p className={description}>
           If you have a job offer or you  want to help me grow as a developer in another way than:
         </p>
